@@ -21,7 +21,9 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@/sprites/*": ["src/Textures/sprites/*"],
+      "@/sprites/*": [
+        "src/Textures/sprites/*"
+      ]
     }
   },
   "include": [

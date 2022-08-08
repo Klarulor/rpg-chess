@@ -9,27 +9,21 @@ import {Home} from "./Components/Home";
 import {Wait} from "./Components/Wait";
 
 function App() {
-  return (
-    <BrowserRouter>
-        <KlaruSocketProvider>
-            <BoardProvider>
-                <div className="App">
-                    <Routes>
-                        <Route path="/game/:id">
-                            <Board />
-                        </Route>
-                        <Route path="/">
-                            <Home />
-                        </Route>
-                        <Route path="/wait/:id">
-                            <Wait />
-                        </Route>
-                    </Routes>
-                </div>
-            </BoardProvider>
-        </KlaruSocketProvider>
-    </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            <KlaruSocketProvider>
+                <BoardProvider>
+                    <div className="App">
+                        <Routes>
+                            <Route path="/game/:id" element={<Board/>}/>
+                            <Route path="/" element={<Home/>}/>
+                            <Route path="/wait/:id" element={<Wait/>}/>
+                        </Routes>
+                    </div>
+                </BoardProvider>
+            </KlaruSocketProvider>
+        </BrowserRouter>
+    );
 }
 
 export default App;

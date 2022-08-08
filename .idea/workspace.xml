@@ -2,31 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23118849-61af-4f57-be60-260cacb0e12a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/config/env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/config/getHttpsConfig.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/config/jest/babelTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/config/jest/cssTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/config/jest/fileTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/config/modules.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/config/paths.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/config/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/config/webpack/persistentCache/createEnvironmentHash.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/config/webpackDevServer.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/scripts/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/scripts/start.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/scripts/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/config/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/config/env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/config/getHttpsConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/config/getHttpsConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/config/jest/babelTransform.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/config/jest/babelTransform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/config/jest/cssTransform.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/config/jest/cssTransform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/config/jest/fileTransform.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/config/jest/fileTransform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/config/modules.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/config/modules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/config/paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/config/paths.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/config/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/config/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/config/webpack/persistentCache/createEnvironmentHash.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/config/webpack/persistentCache/createEnvironmentHash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/config/webpackDevServer.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/config/webpackDevServer.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scripts/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/scripts/build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scripts/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/scripts/start.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scripts/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/scripts/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Classes/Figures/BishopGameFigure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Classes/Figures/BishopGameFigure.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Classes/Figures/KnightGameFigure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Classes/Figures/KnightGameFigure.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Classes/Figures/PawnGameFigure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Classes/Figures/PawnGameFigure.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Classes/Figures/RookGameFigure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Classes/Figures/RookGameFigure.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Classes/GameFigure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Classes/GameFigure.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Board.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Board.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Components/Cell.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Components/Cell.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Context/KlaruSocketContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Context/KlaruSocketContext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Features/Enums.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Features/Enums.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Features/Vector2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Features/Vector2.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Interfaces/Interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Interfaces/Interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/react-app-env.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
-    </list>
-    <list id="a2aaf4cd-35c6-4768-9246-a6f551be260d" name="Changes by Daniil" comment="" />
-    <list id="f05374fd-b901-458d-905b-29d186228fe1" name="Changes by klaru" comment="">
+      <change beforePath="$PROJECT_DIR$/client/src/styles/Board.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/Board.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/Cell.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/Cell.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/Entities/Game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Entities/Game.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/Entities/TempUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Entities/TempUser.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/Features/Interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Features/Interfaces.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/Features/functions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Features/functions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/index.ts" afterDir="false" />
     </list>
+    <list id="a2aaf4cd-35c6-4768-9246-a6f551be260d" name="Changes by Daniil" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/config/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/config/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Classes/GameFigure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Classes/GameFigure.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Context/KlaruSocketContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Context/KlaruSocketContext.tsx" afterDir="false" />
+    </list>
+    <list id="f05374fd-b901-458d-905b-29d186228fe1" name="Changes by klaru" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,11 +65,61 @@
         <option value="CSS File" />
         <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/client/config/webpack.config.js">
+      <ranges>
+        <range start1="12" end1="13" start2="12" end2="13" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="23" end1="26" start2="23" end2="26" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="35" end1="36" start2="35" end2="36" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="39" end1="41" start2="39" end2="41" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="43" end1="44" start2="43" end2="44" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="54" end1="55" start2="54" end2="55" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="62" end1="63" start2="62" end2="63" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="75" end1="78" start2="75" end2="78" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="79" end1="85" start2="79" end2="85" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="90" end1="92" start2="90" end2="92" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="93" end1="97" start2="93" end2="97" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="98" end1="103" start2="98" end2="103" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="104" end1="105" start2="104" end2="105" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="106" end1="187" start2="106" end2="187" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="188" end1="299" start2="188" end2="304" changelist="a2aaf4cd-35c6-4768-9246-a6f551be260d" />
+        <range start1="300" end1="649" start2="305" end2="654" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="650" end1="756" start2="655" end2="761" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/client/package.json">
+      <ranges>
+        <range start1="23" end1="23" start2="23" end2="24" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="40" end1="41" start2="41" end2="42" changelist="a2aaf4cd-35c6-4768-9246-a6f551be260d" />
+        <range start1="60" end1="60" start2="61" end2="62" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="65" end1="65" start2="67" end2="68" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/client/src/Classes/GameFigure.ts">
+      <ranges>
+        <range start1="5" end1="6" start2="5" end2="5" changelist="a2aaf4cd-35c6-4768-9246-a6f551be260d" />
+        <range start1="11" end1="12" start2="10" end2="11" changelist="a2aaf4cd-35c6-4768-9246-a6f551be260d" />
+        <range start1="15" end1="15" start2="14" end2="15" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="16" end1="16" start2="16" end2="17" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="17" end1="18" start2="18" end2="18" changelist="a2aaf4cd-35c6-4768-9246-a6f551be260d" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/client/src/Context/KlaruSocketContext.tsx">
+      <ranges>
+        <range start1="15" end1="16" start2="15" end2="16" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="19" end1="20" start2="19" end2="20" changelist="a2aaf4cd-35c6-4768-9246-a6f551be260d" />
+        <range start1="23" end1="24" start2="23" end2="24" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+        <range start1="28" end1="29" start2="28" end2="29" changelist="23118849-61af-4f57-be60-260cacb0e12a" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,18 +130,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/admin/Desktop/rpg-chess/client/src/Components",
-    "list.type.of.created.stylesheet": "CSS",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\admin\\Desktop\\rpg-chess\\client\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Code With Me" />
+    <property name="ts.external.directory.path" value="C:\Users\klaru\Desktop\rpg-chess\client\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\admin\Desktop\rpg-chess\client\src\Components" />
@@ -85,6 +160,8 @@
       <updated>1659954963512</updated>
       <workItem from="1659954965110" duration="1296000" />
       <workItem from="1659978399808" duration="3972000" />
+      <workItem from="1659983147368" duration="1492000" />
+      <workItem from="1659984668807" duration="6084000" />
     </task>
     <servers />
   </component>
@@ -101,14 +178,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/Classes/GameFigure.ts</url>
-          <line>6</line>
-          <properties lambdaOrdinal="-1" />
+          <line>5</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

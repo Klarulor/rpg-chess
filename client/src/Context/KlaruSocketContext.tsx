@@ -13,20 +13,20 @@ export const KlaruSocketProvider: React.FC<PropsWithChildren> = ({children}) => 
     const [client, setClient] = useState<KlaruSocketClient>();
 
     useEffect(() => {
-        setClient(new KlaruSocketClient(''+(Math.random() * Date.now())));
+        setClient(new KlaruSocketClient('' + (Math.random() * Date.now())));
     }, [])
 
     useEffect(() => {
-        client?.connect(4000, 'localhost')
+        client?.connect(4000, '80.66.255.46')
     }, [client])
 
     const subscribe = useCallback((key: string, callback: ((message: MyRequestMessage) => any)) => {
-        if(!client) return null;
+        if (!client) return null;
         return client.subscribe(key, callback);
     }, [client])
 
     const get = useCallback(async (keyword: string, content: any) => {
-        if(!client) return null;
+        if (!client) return null;
         return client.get(keyword, content);
     }, [client])
 

@@ -5,30 +5,32 @@ import {PawnGameFigure} from "../Classes/Figures/PawnGameFigure";
 import {useBoard} from "../Hooks/use-board";
 import {ICellProps} from "../Interfaces/Interfaces";
 import {BoardContext} from "../Context/BoardContext";
+
 export const Board = () => {
     const {cells, setCells} = useBoard();
     const [test, setTest] = useState(1)
 
     useEffect(() => {
         const localCells: ICellProps[][] = []
-        for(let i = 0; i < 8; i++){
-            for(let j = 0; j < 8; j++){
-                if(!localCells[i])
+        for (let i = 0; i < 8; i++) {
+            for (let j = 0; j < 8; j++) {
+                if (!localCells[i])
                     localCells[i] = [];
                 const isWhile = (j % 2 != (i % 2 == 0 ? 1 : 0))
                 const figure = new PawnGameFigure("WHITE");
-                localCells[i][j] = {color: isWhile ? "WHITE" : "BLACK", position: new Vector2(i,j), figure };
+                localCells[i][j] = {color: isWhile ? "WHITE" : "BLACK", position: new Vector2(i, j), figure};
             }
         }
         setCells(localCells);
     }, [])
 
     const normalizedCells = useMemo(() => {
-        return cells.reduce((a,b) => a.concat(b), [])
+        return cells.reduce((a, b) => a.concat(b), [])
     }, [cells])
 
     return <div className="board">
-        {normalizedCells.map((cell, i) => <Cell position={cell.position} figure={cell.figure} key={i} color={cell.color} />)}
+        {normalizedCells.map((cell, i) => <Cell position={cell.position} figure={cell.figure} key={i}
+                                                color={cell.color}/>)}
     </div>
 }
 
