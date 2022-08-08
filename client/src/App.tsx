@@ -1,25 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Board} from "./Components/Board";
+import {BoardProvider} from "./Context/BoardContext";
+import {KlaruSocketContext, KlaruSocketProvider} from "./Context/KlaruSocketContext";
+import {BrowserRouter} from 'react-router-dom';
+import {Route, Routes} from "react-router";
+import {Home} from "./Components/Home";
+import {Wait} from "./Components/Wait";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+        <KlaruSocketProvider>
+            <BoardProvider>
+                <div className="App">
+                    <Routes>
+                        <Route path="/game/:id">
+                            <Board />
+                        </Route>
+                        <Route path="/">
+                            <Home />
+                        </Route>
+                        <Route path="/wait/:id">
+                            <Wait />
+                        </Route>
+                    </Routes>
+                </div>
+            </BoardProvider>
+        </KlaruSocketProvider>
+    </BrowserRouter>
   );
 }
 

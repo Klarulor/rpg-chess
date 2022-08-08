@@ -1,0 +1,20 @@
+
+.cell{
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    /*padding: 10%;*/
+}
+
+.cell img{
+    width: 80%;
+    height: 80%;
+}
+
+.white{
+    background-color: #61dafb;
+}
+
+.black{
+    background-color: #325bb2;
+}
