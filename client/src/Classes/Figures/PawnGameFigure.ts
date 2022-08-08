@@ -3,9 +3,9 @@ import {GameFigureType} from "../../Features/Enums";
 import {Vector2} from "../../Features/Vector2";
 import {Board} from "../../Components/Board";
 import {Side} from "../../Features/Types";
-// @ts-ignore
+
 import WhitePawn from "../../Textures/Sprites/WhitePawn.png";
-// @ts-ignore
+
 import BlackPawn from "../../Textures/Sprites/BlackPawn.png";
 import {ICellProps} from "../../Interfaces/Interfaces";
 

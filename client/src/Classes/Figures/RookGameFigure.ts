@@ -4,12 +4,16 @@ import {Vector2} from "../../Features/Vector2";
 import {Board} from "../../Components/Board";
 import {Side} from "../../Features/Types";
 import {ICellProps} from "../../Interfaces/Interfaces";
+import whiteRookImg from "../../../Textures/Sprites/WhiteRook.png";
+import blackRookImg from "../../../Textures/Sprites/BlackRook.png";
+
+
 
 export class RookGameFigure extends GameFigure{
     constructor(color: Side) {
         super();
         this.side = color;
-        this.imgSrc = color === "WHITE" ?  "../../../Textures/Sprites/WhiteRook.png" : "../../../Textures/Sprites/WhiteRook.png";
+        this.imgSrc = color === "WHITE" ?  blackRookImg : whiteRookImg;
     }
     public readonly type: GameFigureType = GameFigureType.Rook;
     public position: Vector2 = new Vector2();
