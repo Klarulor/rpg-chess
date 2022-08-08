@@ -4,4 +4,5 @@ export interface IWaitingGames{
     code: string;
     inviter: TempUser
     gameType: GameType;
+    id: number;
 }

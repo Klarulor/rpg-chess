@@ -15,7 +15,8 @@ server.subscribe("create-game", req => {
    const newGame = {
       gameType: type,
       inviter: new TempUser({}),
-      code: generateString(4)
+      code: generateString(4),
+      id: Date.now() * Math.random()
    }
    waitingGames.push(newGame);
    req.reply(newGame.code);
