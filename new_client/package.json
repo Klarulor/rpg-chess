@@ -4,7 +4,7 @@
   "description": "react frontend for rpg-chess",
   "main": "src/index.ts",
   "scripts": {
-    "start": "webpack serve --port 3000",
+    "start": "webpack serve --port 3002",
     "build": "webpack",
     "build-prod": "webpack --mode=production",
     "clean": "rd /s /q dist"
@@ -25,6 +25,8 @@
     "@babel/preset-react": "^7.18.6",
     "@pmmmwh/react-refresh-webpack-plugin": "github:pmmmwh/react-refresh-webpack-plugin",
     "@types/node": "^18.6.5",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
     "babel-loader": "^8.2.5",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
@@ -37,12 +39,29 @@
     "react-refresh": "^0.14.0",
     "sass": "^1.54.3",
     "sass-loader": "^13.0.2",
+    "svg-inline-loader": "^0.8.2",
+    "ts-loader": "^9.3.1",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3"
   },
   "dependencies": {
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/classnames": "^2.3.1",
+    "buffer": "^6.0.3",
+    "classnames": "^2.3.1",
+    "crypto-browserify": "^3.12.0",
+    "klarusocket": "git+https://github.com/Klarulor/Klarusocket.ts#browser",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "svg-loader": "^0.0.2",
+    "typescript": "^4.7.4",
+    "url": "^0.11.0"
   }
 }

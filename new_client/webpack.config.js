@@ -21,16 +21,32 @@ const plugins = [
 module.exports = {
     mode,
     plugins,
+    resolve: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        fallback: {
+            'http': require.resolve('stream-http'),
+            'crypto': require.resolve('crypto-browserify'),
+            'stream': require.resolve('stream-browserify'),
+            'buffer': require.resolve('buffer'),
+            'url': require.resolve('url'),
+        }
+    },
     watch: true,
-    entry: './src/index.jsx',
+    entry: './src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
         assetModuleFilename:  'assets/[hash][ext][query]',
-        clean: true
+        clean: true,
     },
     devtool: "source-map",
     devServer: {
-        hot: true
+        historyApiFallback: true,
+        static: {
+            directory: path.join(__dirname, 'dist'),
+        },
+        compress: true,
+        hot: true,
+        allowedHosts: "dev.nyako.wang"
     },
     module: {
         rules: [
@@ -45,6 +61,11 @@ module.exports = {
                 ],
             },
             {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
+            {
                 test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
                 type: mode === 'production' ? 'asset' : 'asset/resource',
             },
@@ -53,7 +74,7 @@ module.exports = {
                 type: 'asset/resource',
             },
             {
-                test: /\.js$/,
+                test: /\.js?x$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
@@ -63,14 +84,8 @@ module.exports = {
                 },
             },
             {
-                test: /\.jsx?$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        cacheDirectory: false,
-                    },
-                }
+                test: /\.svg$/,
+                loader: 'svg-loader'
             }
         ]
     }

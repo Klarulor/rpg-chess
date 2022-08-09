@@ -1,0 +1,51 @@
+.game {
+  width: max-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .username {
+    padding: 0.5rem 1rem;
+    width: 250px;
+    border-radius: 4px;
+    background: #ccc;
+    outline: none;
+    border: none;
+
+    font-family: "Comfortaa", sans-serif;
+    margin-top: 20px;
+  }
+
+  .play {
+  padding: 0.5rem 1rem;
+    width: 250px;
+    border-radius: 4px;
+    background: #ccc;
+    outline: none;
+    border: none;
+    font-family: "Comfortaa", sans-serif;
+
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background: #499cd0;
+      color: #fff;
+    }
+
+    &:active {
+      transform: translateY(-5px);
+    }
+
+    &:disabled {
+      background: #ccc;
+      color: #999;
+    }
+
+    &:disabled:hover {
+      background: #ccc;
+      color: #999;
+    }
+  }
+}

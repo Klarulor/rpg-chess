@@ -1,7 +1,7 @@
 import GameFigure from "../GameFigure";
 import {GameFigureType} from "../../Features/Enums";
 import {Vector2} from "../../Features/Vector2";
-import {Board} from "../../Components/Board";
+import {Board} from "../../Components/Board/Board";
 import {Side} from "../../Features/Types";
 import {ICellProps} from "../../Interfaces/Interfaces";
 import whiteRookImg from "../../../Textures/Sprites/WhiteRook.png";
@@ -13,6 +13,7 @@ export class RookGameFigure extends GameFigure {
         super();
         this.side = color;
         this.imgSrc = color === "WHITE" ? blackRookImg : whiteRookImg;
+        this.powerValue = 5;
     }
 
     public readonly type: GameFigureType = GameFigureType.Rook;
