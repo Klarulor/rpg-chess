@@ -1,8 +1,4 @@
 @import "styles/Cell.css";
 @import "styles/Board.css";
-
-.App {
-    text-align: center;
-}
-
+@import "styles/global.css";
 
