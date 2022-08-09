@@ -1,0 +1,53 @@
+
+.cell {
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*padding: 10%;*/
+
+  transition: all 220ms linear;
+  position: relative;
+
+  img {
+    transition: all 220ms linear;
+  }
+}
+.isOver {
+  background: red !important;
+}
+
+.canDrop {
+  position: relative;
+}
+
+.canDrop:after {
+  background: #00ff4570 !important;
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  left: 0;
+  top: 0;
+  content: ''
+}
+
+.cell_WHITE {
+  background-color: #61dafb;
+}
+
+.cell_BLACK {
+  background-color: #325bb2;
+}
+
+@keyframes imageLoad {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

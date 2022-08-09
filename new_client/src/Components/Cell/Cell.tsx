@@ -1,30 +1,50 @@
-import React, {FC, memo, useState} from "react";
-import {ICellProps} from "../Interfaces/Interfaces";
-import GameFigure from "../Classes/GameFigure";
-import {Vector2} from "../Features/Vector2";
+import React, {FC, memo, useMemo, useState} from "react";
+import {ICellProps} from "../../Interfaces/Interfaces";
+import GameFigure from "../../Classes/GameFigure";
+import {Vector2} from "../../Features/Vector2";
 // @ts-ignore
-import randomLogo from "../Textures/Sprites/BlackKing.png";
-import {useBoard} from "../Hooks/use-board";
-import {PawnGameFigure} from "../Classes/Figures/PawnGameFigure";
-import {GameFigureType} from "../Features/Enums";
+import randomLogo from "../../Textures/Sprites/BlackKing.png";
+import {useBoard} from "../../Hooks/use-board";
+import {PawnGameFigure} from "../../Classes/Figures/PawnGameFigure";
+import {GameFigureType} from "../../Features/Enums";
+import styles from './Cell.module.scss';
+import classNames from "classnames";
+import {useDrag, useDrop} from 'react-dnd'
+import {KnightGameFigure} from "../../Classes/Figures/KnightGameFigure";
+import {BishopGameFigure} from "../../Classes/Figures/BishopGameFigure";
+import {Figure} from "../Figure/Figure";
+export const Cell: FC<ICellProps> = (({figure, color, position}) => {
+    const {setCell, cells, setCells} = useBoard();
 
-export const Cell: FC<ICellProps> = memo(({figure, color, position}) => {
-    const {setCell} = useBoard();
-
-    function onClick() {
-        setCell(new Vector2(position.x, position.y), {
-            color: color,
-            figure: new PawnGameFigure(figure?.side == 'WHITE' ? 'BLACK' : 'WHITE'),
-            position
+    const [{ isOver, canDrop }, drop] = useDrop({
+        accept: [`Pawn`,
+                `Knight`,
+                `Bishop`,
+                `Rook`,
+                `Queen`,
+                `King`],
+        drop: (item) => moveFigure(item.figure, position),
+        canDrop: (item: any) => item.figure.canMoveFigure(cells, position),
+        collect: monitor => ({
+            isOver: !!monitor.isOver(),
+            canDrop: !!monitor.canDrop()
         })
+    });
+
+    const moveFigure = (figure: GameFigure, position: Vector2) => {
+        const oldPosition = figure.position;
+        console.log(oldPosition, position);
+        cells[oldPosition.y][oldPosition.x].figure = null;
+        figure.position = new Vector2(position.x, position.y);
+        cells[position.y][position.x].figure = figure;
+        setCells([...cells]);
     }
 
-    return <div onClick={onClick} className={"cell " + color.toLowerCase()}>
-<<<<<<< Updated upstream:client/src/Components/Cell.tsx
-        <img src={figure?.imgSrc} alt={GameFigureType[figure?.type || 0]}/>
-=======
-        {figure && <img src={figure?.imgSrc} alt={GameFigureType[figure?.type || 0]}/>}
->>>>>>> Stashed changes:new_client/src/Components/Cell/Cell.tsx
+    return <div className={classNames(styles.cell, styles[`cell_${color}`], {
+        [styles.canDrop]: canDrop,
+        [styles.isOver]: isOver,
+    })} ref={drop} >
+        {figure && <Figure figure={figure}/>}
     </div>;
 })
 

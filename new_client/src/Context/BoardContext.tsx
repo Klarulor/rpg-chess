@@ -1,4 +1,4 @@
-import {Cell} from "../Components/Cell";
+import {Cell} from "../Components/Cell/Cell";
 import {FC, createContext, useState, PropsWithChildren, useCallback} from 'react';
 import {ICellProps} from "../Interfaces/Interfaces";
 import {Vector2} from "../Features/Vector2";

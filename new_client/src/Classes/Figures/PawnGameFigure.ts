@@ -1,7 +1,7 @@
 import GameFigure from "../GameFigure";
 import {GameFigureType} from "../../Features/Enums";
 import {Vector2} from "../../Features/Vector2";
-import {Board} from "../../Components/Board";
+import {Board} from "../../Components/Board/Board";
 import {Side} from "../../Features/Types";
 
 import WhitePawn from "../../Textures/Sprites/WhitePawn.png";
@@ -14,16 +14,17 @@ export class PawnGameFigure extends GameFigure {
         super();
         this.side = side;
         this.imgSrc = side === "WHITE" ? WhitePawn : BlackPawn;
+        this.powerValue = 1;
     }
 
     public readonly type: GameFigureType = GameFigureType.Pawn;
     public position: Vector2 = new Vector2();
 
     protected canMove(cells: ICellProps[][], newPosition: Vector2): boolean {
-        if (!newPosition.equals(Vector2.AddY(this.position, -1))) {
-            return ((!newPosition.equals(Vector2.AddX(this.position, -1)) || !newPosition.equals(Vector2.AddX(this.position, 1)))
-                && this.position.y - 1 == newPosition.y && cells[newPosition.x][newPosition.y]?.figure?.type != GameFigureType.King)
+        // can move only one step up
+        if(this.position.y == 6) {
+            return (newPosition.y == (this.position.y-2) || newPosition.y == (this.position.y-1)) && newPosition.x == (this.position.x);
         }
-        return !cells[newPosition.x][newPosition.y].figure;
+        return newPosition.y == (this.position.y-1) && newPosition.x == (this.position.x);
     }
 }
