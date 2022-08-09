@@ -1,0 +1,1 @@
+{"version":3,"file":"main.js","mappings":";;;;;AAAA,IAAMA,IAAI,GAAG,SAAPA,IAAO;EAAA,OAAMC,OAAO,CAACC,GAAR,CAAY,IAAZ,CAAN;AAAA,CAAb;;AACAF,IAAI,G","sources":["webpack://chess-frontend/./src/index.js"],"sourcesContent":["const test = () => console.log('hi');\r\ntest();"],"names":["test","console","log"],"sourceRoot":""}

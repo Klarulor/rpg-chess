@@ -10,11 +10,17 @@ import {GameFigureType} from "../Features/Enums";
 
 export const Cell: FC<ICellProps> = memo(({figure, color, position}) => {
     const {setCell} = useBoard();
-    function onClick(){
-        setCell(new Vector2(position.x, position.y), {color:color, figure: new PawnGameFigure(figure?.side == 'WHITE' ? 'BLACK' : 'WHITE'), position})
+
+    function onClick() {
+        setCell(new Vector2(position.x, position.y), {
+            color: color,
+            figure: new PawnGameFigure(figure?.side == 'WHITE' ? 'BLACK' : 'WHITE'),
+            position
+        })
     }
+
     return <div onClick={onClick} className={"cell " + color.toLowerCase()}>
-        <img src={figure?.imgSrc} alt={GameFigureType[figure?.type || 0]} />
+        <img src={figure?.imgSrc} alt={GameFigureType[figure?.type || 0]}/>
     </div>;
 })
 
