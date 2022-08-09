@@ -1,4 +1,4 @@
-export enum GameFigureType{
+export enum GameFigureType {
     Pawn, // PECHKA
     Knight, //Kon
     Bishop, // Officer

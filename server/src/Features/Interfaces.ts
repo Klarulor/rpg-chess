@@ -5,4 +5,5 @@ export interface IWaitingGames{
     inviter: TempUser
     gameType: GameType;
     id: number;
+    players: TempUser[];
 }
