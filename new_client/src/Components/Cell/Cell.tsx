@@ -20,7 +20,11 @@ export const Cell: FC<ICellProps> = memo(({figure, color, position}) => {
     }
 
     return <div onClick={onClick} className={"cell " + color.toLowerCase()}>
+<<<<<<< Updated upstream:client/src/Components/Cell.tsx
         <img src={figure?.imgSrc} alt={GameFigureType[figure?.type || 0]}/>
+=======
+        {figure && <img src={figure?.imgSrc} alt={GameFigureType[figure?.type || 0]}/>}
+>>>>>>> Stashed changes:new_client/src/Components/Cell/Cell.tsx
     </div>;
 })
 
