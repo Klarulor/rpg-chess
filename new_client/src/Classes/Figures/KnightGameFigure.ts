@@ -28,4 +28,14 @@ export class KnightGameFigure extends GameFigure {
             }
         }
     }
+    protected canTake(cells: ICellProps[][], newPosition: Vector2): boolean {
+        for(let i = 0; i < KnightGameFigure.AVAILABLE_DIRECTIONS.length; i++) {
+            if(newPosition.x == (this.position.x + KnightGameFigure.AVAILABLE_DIRECTIONS[i][0]) && newPosition.y == (this.position.y + KnightGameFigure.AVAILABLE_DIRECTIONS[i][1])) {
+                return true;
+            }
+        }
+    }
+    protected canPromote(cells: ICellProps[][], newPosition: Vector2): boolean {
+        return false;
+    }
 }

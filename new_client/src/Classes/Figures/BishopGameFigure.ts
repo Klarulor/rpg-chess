@@ -22,4 +22,10 @@ export class BishopGameFigure extends GameFigure {
         // can move only 45 degrees diagonal directions
         return (Math.abs(newPosition.x - this.position.x) == Math.abs(newPosition.y - this.position.y));
     }
+    protected canTake(cells: ICellProps[][], newPosition: Vector2): boolean {
+       return (Math.abs(newPosition.x - this.position.x) == Math.abs(newPosition.y - this.position.y));
+    }
+    protected canPromote(cells: ICellProps[][], newPosition: Vector2): boolean {
+        return false;
+    }
 }

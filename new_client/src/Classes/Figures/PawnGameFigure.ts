@@ -21,10 +21,17 @@ export class PawnGameFigure extends GameFigure {
     public position: Vector2 = new Vector2();
 
     protected canMove(cells: ICellProps[][], newPosition: Vector2): boolean {
-        // can move only one step up
-        if(this.position.y == 6) {
+        if(!this.wasMoved) {
             return (newPosition.y == (this.position.y-2) || newPosition.y == (this.position.y-1)) && newPosition.x == (this.position.x);
         }
         return newPosition.y == (this.position.y-1) && newPosition.x == (this.position.x);
+    }
+
+    protected canTake(cells: ICellProps[][], newPosition: Vector2): boolean {
+        return (newPosition.y == (this.position.y-1) && (newPosition.x == (this.position.x + 1) || newPosition.x == (this.position.x - 1))) && cells[newPosition.x][newPosition.y].figure !== null;
+    }
+
+    protected canPromote(cells: ICellProps[][], newPosition: Vector2): boolean {
+        return this.canMove(cells, newPosition) && newPosition.y == 0;
     }
 }
