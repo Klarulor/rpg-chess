@@ -29,4 +29,11 @@ export class RookGameFigure extends GameFigure {
         }
         return true;
     }
+
+    protected canTake(cells: ICellProps[][], newPosition: Vector2): boolean {
+        return newPosition.y == (this.position.y-1) && newPosition.x == (this.position.x);
+    }
+    protected canPromote(cells: ICellProps[][], newPosition: Vector2): boolean {
+        return false;
+    }
 }

@@ -23,4 +23,11 @@ export class QueenGameFigure extends GameFigure {
         // can move only 45 degrees diagonal directions and straight directions and not through other figures and not through the same side figures
         return (Math.abs(newPosition.x - this.position.x) == Math.abs(newPosition.y - this.position.y) || newPosition.x == this.position.x || newPosition.y == this.position.y);
     }
+
+    protected canTake(cells: ICellProps[][], newPosition: Vector2): boolean {
+        return newPosition.y == (this.position.y-1) && newPosition.x == (this.position.x);
+    }
+    protected canPromote(cells: ICellProps[][], newPosition: Vector2): boolean {
+        return false;
+    }
 }

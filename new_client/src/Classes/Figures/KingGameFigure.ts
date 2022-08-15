@@ -22,4 +22,10 @@ export class KingGameFigure extends GameFigure {
         // can move like queen but have to be one step away from other figures
         return (Math.abs(newPosition.x - this.position.x) == 1 && Math.abs(newPosition.y - this.position.y) == 1) || (Math.abs(newPosition.x - this.position.x) == 0 && Math.abs(newPosition.y - this.position.y) == 1) || (Math.abs(newPosition.x - this.position.x) == 1 && Math.abs(newPosition.y - this.position.y) == 0);
     }
+    protected canTake(cells: ICellProps[][], newPosition: Vector2): boolean {
+        return (Math.abs(newPosition.x - this.position.x) == 1 && Math.abs(newPosition.y - this.position.y) == 1) || (Math.abs(newPosition.x - this.position.x) == 0 && Math.abs(newPosition.y - this.position.y) == 1) || (Math.abs(newPosition.x - this.position.x) == 1 && Math.abs(newPosition.y - this.position.y) == 0);
+    }
+    protected canPromote(cells: ICellProps[][], newPosition: Vector2): boolean {
+        return false;
+    }
 }
