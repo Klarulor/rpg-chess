@@ -1,7 +1,6 @@
 import GameFigure from "../GameFigure";
 import {GameFigureType} from "../../Features/Enums";
 import {Vector2} from "../../Features/Vector2";
-import {Board} from "../../Components/Board/Board";
 import {Side} from "../../Features/Types";
 
 import WhitePawn from "../../Textures/Sprites/WhitePawn.png";
@@ -28,7 +27,7 @@ export class PawnGameFigure extends GameFigure {
     }
 
     protected canTake(cells: ICellProps[][], newPosition: Vector2): boolean {
-        return (newPosition.y == (this.position.y-1) && (newPosition.x == (this.position.x + 1) || newPosition.x == (this.position.x - 1))) && cells[newPosition.x][newPosition.y].figure !== null;
+        return (newPosition.y == (this.position.y-1) && (newPosition.x == (this.position.x + 1) || newPosition.x == (this.position.x - 1))) && cells[newPosition.x][newPosition.y].figure?.side === ((this.side === "WHITE") ? "BLACK" : "WHITE");
     }
 
     protected canPromote(cells: ICellProps[][], newPosition: Vector2): boolean {

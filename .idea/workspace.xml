@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="23118849-61af-4f57-be60-260cacb0e12a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_client/src/Classes/Figures/BishopGameFigure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/new_client/src/Classes/Figures/BishopGameFigure.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_client/src/Classes/Figures/KingGameFigure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/new_client/src/Classes/Figures/KingGameFigure.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_client/src/Classes/Figures/KnightGameFigure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/new_client/src/Classes/Figures/KnightGameFigure.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_client/src/Classes/Figures/PawnGameFigure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/new_client/src/Classes/Figures/PawnGameFigure.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_client/src/Classes/Figures/QueenGameFigure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/new_client/src/Classes/Figures/QueenGameFigure.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_client/src/Classes/Figures/RookGameFigure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/new_client/src/Classes/Figures/RookGameFigure.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_client/src/Classes/GameFigure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/new_client/src/Classes/GameFigure.ts" afterDir="false" />
     </list>
     <list id="a2aaf4cd-35c6-4768-9246-a6f551be260d" name="Changes by Daniil" comment="" />
     <list id="f05374fd-b901-458d-905b-29d186228fe1" name="Changes by klaru" comment="" />
@@ -23,9 +16,9 @@
       <list>
         <option value="CSS File" />
         <option value="TypeScript JSX File" />
-        <option value="TypeScript File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -44,6 +37,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\admin\\Desktop\\rpg-chess\\new_client\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -76,7 +70,10 @@
       <workItem from="1660124203306" duration="76000" />
       <workItem from="1660248476808" duration="370000" />
       <workItem from="1660252049345" duration="858000" />
-      <workItem from="1660567493885" duration="2532000" />
+      <workItem from="1660567493885" duration="5692000" />
+      <workItem from="1660686050198" duration="1209000" />
+      <workItem from="1660771835415" duration="2903000" />
+      <workItem from="1660830728077" duration="1866000" />
     </task>
     <servers />
   </component>

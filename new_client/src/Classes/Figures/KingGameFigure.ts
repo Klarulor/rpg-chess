@@ -23,7 +23,7 @@ export class KingGameFigure extends GameFigure {
         return (Math.abs(newPosition.x - this.position.x) == 1 && Math.abs(newPosition.y - this.position.y) == 1) || (Math.abs(newPosition.x - this.position.x) == 0 && Math.abs(newPosition.y - this.position.y) == 1) || (Math.abs(newPosition.x - this.position.x) == 1 && Math.abs(newPosition.y - this.position.y) == 0);
     }
     protected canTake(cells: ICellProps[][], newPosition: Vector2): boolean {
-        return (Math.abs(newPosition.x - this.position.x) == 1 && Math.abs(newPosition.y - this.position.y) == 1) || (Math.abs(newPosition.x - this.position.x) == 0 && Math.abs(newPosition.y - this.position.y) == 1) || (Math.abs(newPosition.x - this.position.x) == 1 && Math.abs(newPosition.y - this.position.y) == 0);
+        return (Math.abs(newPosition.x - this.position.x) == 1 && Math.abs(newPosition.y - this.position.y) == 1) || (Math.abs(newPosition.x - this.position.x) == 0 && Math.abs(newPosition.y - this.position.y) == 1) || (Math.abs(newPosition.x - this.position.x) == 1 && Math.abs(newPosition.y - this.position.y) == 0)  && cells[newPosition.x][newPosition.y].figure?.side === ((this.side === "WHITE") ? "BLACK" : "WHITE");
     }
     protected canPromote(cells: ICellProps[][], newPosition: Vector2): boolean {
         return false;
