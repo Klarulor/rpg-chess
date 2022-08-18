@@ -46,28 +46,5 @@ export const Cell: FC<ICellProps> = (({figure, color, position}) => {
     })} ref={drop} >
         {figure && <Figure figure={figure}/>}
     </div>;
-})
+});
 
-// export class Cell extends React.Component<any, any>{
-//     public readonly color: string;
-//     public figure?: GameFigure;
-//     public position: Vector2 = new Vector2();
-//
-//     // private figureImg?: typeof randomLogo;
-//
-//
-//     constructor(props: CellConstructor) {
-//         super(props);
-//         this.color = props.color;
-//         console.log(props.figure);
-//         this.state = {
-//             img: props.figure?.imgSrc
-//         }
-//     }
-//     render(){
-//
-//         return <div className={"cell " + this.color}>
-//                         <img src={this.state.img} onClick={()=>{console.log(this.state.img)}}/>
-//                   </div>;
-//     }
-// }

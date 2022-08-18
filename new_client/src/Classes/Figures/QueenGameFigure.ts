@@ -25,7 +25,7 @@ export class QueenGameFigure extends GameFigure {
     }
 
     protected canTake(cells: ICellProps[][], newPosition: Vector2): boolean {
-        return newPosition.y == (this.position.y-1) && newPosition.x == (this.position.x);
+        return this.canMove(cells, newPosition) && cells[newPosition.x][newPosition.y].figure?.side === ((this.side === "WHITE") ? "BLACK" : "WHITE");
     }
     protected canPromote(cells: ICellProps[][], newPosition: Vector2): boolean {
         return false;
