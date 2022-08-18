@@ -3,18 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="23118849-61af-4f57-be60-260cacb0e12a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_client/src/Classes/Figures/KingGameFigure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/new_client/src/Classes/Figures/KingGameFigure.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_client/src/Classes/Figures/KnightGameFigure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/new_client/src/Classes/Figures/KnightGameFigure.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_client/src/Classes/Figures/QueenGameFigure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/new_client/src/Classes/Figures/QueenGameFigure.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_client/src/Classes/Figures/RookGameFigure.ts" beforeDir="false" afterPath="$PROJECT_DIR$/new_client/src/Classes/Figures/RookGameFigure.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_client/src/Components/Cell/Cell.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/new_client/src/Components/Cell/Cell.tsx" afterDir="false" />
     </list>
     <list id="a2aaf4cd-35c6-4768-9246-a6f551be260d" name="Changes by Daniil" comment="" />
-    <list id="f05374fd-b901-458d-905b-29d186228fe1" name="Changes by klaru" comment="">
-      <change beforePath="$PROJECT_DIR$/server/src/Entities/Game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Entities/Game.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/Features/Types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/Features/Types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/index.ts" afterDir="false" />
-    </list>
+    <list id="f05374fd-b901-458d-905b-29d186228fe1" name="Changes by klaru" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +73,7 @@
       <workItem from="1660567493885" duration="5692000" />
       <workItem from="1660686050198" duration="1209000" />
       <workItem from="1660771835415" duration="2903000" />
-      <workItem from="1660830728077" duration="927000" />
+      <workItem from="1660830728077" duration="1866000" />
     </task>
     <servers />
   </component>

@@ -53,7 +53,7 @@ server.subscribe("start-game", req => {
 });
 
 
-export function setupBoardRPC = (id: number, opts: ISetupBoardOptions) => sendToAll(id, "setupBoardRPC", opts);
+export const setupBoardRPC = (id: number, opts: ISetupBoardOptions) => sendToAll(id, "setupBoardRPC", opts);
 
 
 function sendToAll(id: number, name: string, data: any): void{
